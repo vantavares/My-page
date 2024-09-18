@@ -1,0 +1,66 @@
+body {
+    background-color: #f8f9fa;
+    font-family: , sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    position: relative; /* Necessário para o efeito da borda */
+}
+
+h1::before {
+    content: attr(data-text); /* Usa o texto do título */
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white; /* Cor da borda */
+    z-index: -5; /* Coloca a borda atrás do texto */
+    filter: blur(2px); /* Blur para criar efeito de borda */
+}
+p {
+    color: white; /* Define a cor do texto como branca */
+}
+
+h2 {
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+h3 {
+    margin-top: auto;
+    color:#ffffff
+}
+p {
+    color:#ffffff;
+}
+footer {
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.img-fluid {
+    width: 400px; /* Defina a largura desejada */
+    height: 200px; /* Defina a altura desejada */
+    object-fit: cover; /* Corta a imagem se necessário, mantendo a proporção */
+    border: 5px solid white; /* Adiciona uma borda branca */
+    border-radius: 10px; /* (Opcional) Arredonda os cantos da borda */
+    margin-bottom: 20px; /* Espaço entre as imagens */
+}
+body {
+    background-image: url('fundoprog.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+}
+.skill-title {
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    font-size: 24px; /* Tamanho da fonte */
+    color: white; /* Cor do texto, se necessário */
+}
